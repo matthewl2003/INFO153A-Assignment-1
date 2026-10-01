@@ -1,9 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- Link your CSS file and other references here -->
+        <!--Link your CSS file and other references here -->
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Assignment 1</title>
     </head>
     <body>
         <!-- Content goes here -->
+        <header class = "main-header">
+            <div class = "left-header">
+                <button class = "icon-button">
+                    <img src = "assets/menu_icon.png" alt = "Menu Icon">
+                </button>
+
+                <div class = "search-bar">
+                    <img src = "assets/search_icon.png" alt = "Search Icon" class = "search-icon">
+                    <input type = "text" placeholder = "Quick Find" class = "search-input">
+                </div>
+            </div>
+
+            <div class = "right-header">
+                <img src = "assets/check_icon.png" alt = "Completed tasks icon">
+                <span class = "task-counter">30/5</span>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <div class = "layout">
+
+            <nav class = "left-navigation">
+                <ul class = "nav-list">
+                    <li class = "nav-items">
+                        <img src = "assets/inbox_icon.png" alt = "Inbox Icon">
+                        <span class = "nav-text">Inbox</span>
+                        <span class = "task-count">5</span>
+                    </li>
+                    <li class = "nav-items">
+                        <img src = "assets/calendar_icon.png" alt = "Calendar Icon" class = "nav-icon">
+                        <span class = "nav-text">Today</span>
+                        <span class = "task-count">5</span>
+                    </li>
+                    <li class = "nav-items">
+                        <img src = "assets/upcoming_icon.png" alt = "Upcoming Icon" class = "nav-icon">
+                        <span class = "nav-text">Upcoming</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class = "main-content">
+                <section class = "all-tasks">
+                <h1>Inbox</h1>
+
+                <ul class = "task-list">
+                    <li class = "task-item">
+                        <input type = "radio" id="task1" name="mom" class = "radio-button">
+                        <label for = "task1">Call Mom</label>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "radio" id="task2" name="issue" class = "radio-button">
+                        <label for = "task2">Buy the new issue of Scientific American</label>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "radio" id="task3" name="textbook" class = "radio-button">
+                        <label for = "task3">Return the textbook to Josie</label>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "radio" id="task4" name="album" class = "radio-button">
+                        <label for = "task4">Buy the new album by Rake</label>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "radio" id="task5" name="gift" class = "radio-button">
+                        <label for = "task5">Buy a gift card for Dad</label>
+                    </li>
+                </ul>
+                </section>
+            </main>
+
+        </div>
+        
     </body>
 </html>

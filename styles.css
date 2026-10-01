@@ -1,4 +1,129 @@
 /* This is your CSS files */
 body {
-    color: black
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.main-header {
+    background-color: #dc4c3e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-button {
+    background: transparent;
+    display: flex;
+    border: none;
+    padding-right: 0%;
+}
+
+.icon-button img {
+    height: 28px;
+}
+
+.search-bar {
+    display:flex;
+    align-items: center;
+    background-color: lightcoral;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+}
+
+.search-icon {
+    margin-right: 7px;
+}
+
+.search-input {
+    color: white;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.search-input::placeholder {
+    color: white;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.layout {
+    display: flex;
+    gap: 30px;
+}
+
+.left-navigation {
+    width: 300px;
+    background-color: #fefbf2;
+    color: #000;
+    margin-top: 50px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.task-count {
+    color: #7e7d79;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.main-content {
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+    display: flex;
+}
+
+.all-tasks h1 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.task-list {
+    list-style: none;
+    padding-left:0;
+    margin-left:0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.radio-button {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #7e7d79;
+    margin-right: 15px;
 }
